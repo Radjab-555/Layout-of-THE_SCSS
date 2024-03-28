@@ -572,11 +572,11 @@ gap: 27px;
         gap: 30px;
     }
 }
-.swiper-button-prev {
+ .popular-slider-prev {
     position: absolute;
     left: -130px;
 }
-.swiper-button-next {
+.popular-slider-next {
     position: absolute;
     right: -130px;
     transform: rotate(180deg);
@@ -613,7 +613,10 @@ gap: 27px;
             justify-content: center;
             align-items: flex-start;
             margin-top: clamp(1.875rem, 1.33rem + 2.73vw, 3.75rem);
-            gap: clamp(1.25rem, 0.705rem + 2.73vw, 3.125rem);
+            gap: clamp(1.25rem, 0.705rem + vw, 3.125rem);
+            @media(max-width: 768px) {
+                flex-direction: column;
+            }
 		}
 		// .why__item
 		&__item {
@@ -627,14 +630,13 @@ gap: 27px;
     flex: 0 0 calc(376px / 1420px * 100%);
 		// .item-why__img
 		&__img {
-            // width: clamp(1.25rem, 0.705rem + 2.73vw, 3.125rem);
-            // height: clamp(1.25rem, 0.705rem + 2.73vw, 3.125rem);
+            width: clamp(6.25rem, 4.795rem + 7.27vw, 11.25rem);
             aspect-ratio: 1;
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
-            margin-bottom: 36px;
+            margin-bottom: clamp(1.563rem, 1.362rem + 1vw, 2.25rem);
             &:before {
                 content: '';
                 width: 100%;
@@ -662,3 +664,45 @@ gap: 27px;
             margin-top: 10px;
 		}
 }
+
+                        //--------reviews------//
+.reviews {
+		// .reviews__container
+		&__container {
+            max-width: 1020px;
+            margin: 0 auto;
+		}
+		// .reviews__quotes
+		&__quotes {
+		}
+		// .reviews__slider
+		&__slider {
+		}
+}
+.slider-reviews {
+		// .slider-reviews__slide
+		&__slide {
+		}
+		// .slider-reviews__text
+		&__text {
+		}
+		// .slider-reviews__info
+		&__info {
+		}
+		// .slider-reviews__name
+		&__name {
+		}
+		// .slider-reviews__job
+		&__job {
+		}
+		// .slider-reviews__buttons
+		&__buttons {
+		}
+}
+.slider-reviews-btn {
+}
+.slider-reviews-prev {
+}
+.swiper-button-next {
+}
+

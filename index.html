@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout of THE_SSSS</title>
-    <link rel="stylesheet" href="/scss/style.css">
+    <link rel="stylesheet" href="./scss/style.css">
 </head>
 <body>
     <header class="header">
@@ -257,8 +257,8 @@
                         </div>
                     </div>
                     <div class="slider-buttons">
-                        <div class="popular-slider-btn swiper-button-prev"></div>
-                        <div class="popular-slider-btn swiper-button-next"></div>
+                        <div class="popular-slider-btn popular-slider-prev swiper-button-prev"></div>
+                        <div class="popular-slider-btn popular-slider-next swiper-button-next"></div>
                     </div>
                 </div>
                 <div class="popular__link">
@@ -266,7 +266,7 @@
                 </div>
             </div>
         </section>
-        <div class="why">
+        <section class="why">
             <div class="why__container">
                 <div class="title why__title">Why to choose us</div>
                 <div class="why__body">
@@ -291,9 +291,51 @@
 
                 </div>                
             </div>
-        </div>
+        </section>
+        <section class="reviews">
+            <div class="reviews__container">
+                <div class="reviews__quotes">“</div>
+                <div class="reviews__slider slider-reviews swiper">
+                    <div class="swiper-wrapper">
+                        <div class="slider-reviews__slide swiper-slide">
+                            <div class="slider-reviews__text">Massa semper non rutrum orci facilisi sit. Lectus porta quam a fringilla eget viverra sem. Vulputate massa hendrerit turpis gravida tempor, porttitor.</div>
+                            <div class="slider-reviews__info">
+                                <div class="slider-reviews__name">Elena Pravo</div>
+                                <div class="slider-reviews__job">Ceo, Upstate</div>
+                            </div>
+                        </div>
+
+                        <div class="slider-reviews__slide swiper-slide">
+                            <div class="slider-reviews__text">Massa semper non rutrum orci facilisi sit. Lectus porta quam a fringilla eget viverra sem. Vulputate massa hendrerit turpis gravida tempor, porttitor.</div>
+                            <div class="slider-reviews__info">
+                                <div class="slider-reviews__name">Elena Pravo</div>
+                                <div class="slider-reviews__job">Ceo, Upstate</div>
+                            </div>
+                        </div>
+
+                        <div class="slider-reviews__slide swiper-slide">
+                            <div class="slider-reviews__text">Massa semper non rutrum orci facilisi sit. Lectus porta quam a fringilla eget viverra sem. Vulputate massa hendrerit turpis gravida tempor, porttitor.</div>
+                            <div class="slider-reviews__info">
+                                <div class="slider-reviews__name">Elena Pravo</div>
+                                <div class="slider-reviews__job">Ceo, Upstate</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-reviews__buttons">
+                    <div class="slider-reviews-btn slider-reviews-prev swiper-button-prev"><svg width="23" height="38" viewBox="0 0 23 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.56705 38L23 19L4.56705 0L0 4.70755L13.8659 19L0 33.2924L4.56705 38Z"/>
+                    </svg>
+                    </div>
+                    <div class="slider-reviews-btn slider-reviews-next swiper-button-next"><svg width="23" height="38" viewBox="0 0 23 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.56705 38L23 19L4.56705 0L0 4.70755L13.8659 19L0 33.2924L4.56705 38Z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <script defer src="/js/script.js"></script>
-    <script src="/js/swiper.js"></script>
+    <script defer src="./js/script.js"></script>
+    <script src="./js/swiper.js"></script>
 </body>
 </html>

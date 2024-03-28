@@ -28,13 +28,13 @@ if (filter) {
 }
 
                     // ------swiper-------//
-const swiper = new Swiper('.popular-slider', {
+const popularSlider = new Swiper('.popular-slider', {
     // observer: true,
     spaceBetween: 20,
     slidesPerView: 1,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.popular-slider-prev',
+    prevEl: '.popular-slider-next',
   },
   breakpoints: {
     992: {
@@ -43,5 +43,23 @@ const swiper = new Swiper('.popular-slider', {
     660: {
     slidesPerView: 2,
     },
+  }
+} );
+
+const reviewsSlider = new Swiper('.slider__reviews', {
+    // observer: true,
+    spaceBetween: 20,
+    slidesPerView: 1,
+  navigation: {
+    nextEl: '.slider-reviews-next',
+    prevEl: '.slider-reviews-next',
+  },
+  breakpoints: {
+    992: {
+    slidesPerView: 1,
+    },
+    // 660: {
+    // slidesPerView: 2,
+    // },
   }
 } );
