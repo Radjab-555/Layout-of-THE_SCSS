@@ -469,7 +469,7 @@ body._lock {
 }
 
 .swiper-wrapper {
-  display: inline-flex;
+  display: -webkit-box;
   justify-content: space-between;
 }
 
