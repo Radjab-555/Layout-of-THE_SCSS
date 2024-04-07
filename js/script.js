@@ -44,12 +44,13 @@ const popularSlider = new Swiper('.popular-slider', {
     slidesPerView: 2,
     },
   }
-} );
+} )
 
 const reviewsSlider = new Swiper('.slider__reviews', {
     // observer: true,
     spaceBetween: 20,
     slidesPerView: 1,
+    autoHeight: true,
   navigation: {
     nextEl: '.slider-reviews-next',
     prevEl: '.slider-reviews-next',
@@ -58,8 +59,18 @@ const reviewsSlider = new Swiper('.slider__reviews', {
     992: {
     slidesPerView: 1,
     },
-    // 660: {
-    // slidesPerView: 2,
-    // },
   }
-} );
+} )
+// gallery 
+const gallereyItems = document.querySelectorAll(".gallery__item");
+if (gallereyItems.length > 0) {
+  galereyItems.forEach(item => {
+    new Swiper(item, {
+      slidesPerView: 1,
+      autoplay: {
+        dellay: 5000,
+      },
+      effect: "fade",
+    }) 
+  })
+}
