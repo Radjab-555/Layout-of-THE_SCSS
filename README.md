@@ -1,1 +1,2 @@
-the project is under development
+SCSS layout for the experience
+    
